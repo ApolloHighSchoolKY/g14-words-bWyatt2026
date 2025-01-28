@@ -5,11 +5,11 @@ public class Wordtester
         Word word = new Word("word");
 
         System.out.println(word);
-        System.out.println("Num of vowels = " + word.getNumVowels());
+        System.out.println("\nNum of vowels = " + word.getNumVowels());
         System.out.println("Word length = " + word.getLength());
 
         word.setWord("newWord");
-        System.out.println("Num of vowels = " + word.getNumVowels());
+        System.out.println("\nNum of vowels = " + word.getNumVowels());
         System.out.println("Word length = " + word.getLength());
         
     }
