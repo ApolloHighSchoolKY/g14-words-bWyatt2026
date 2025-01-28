@@ -20,9 +20,6 @@ public class Lab16c
 		System.out.println("\nafter removing words with 3 chars \n" + test);
 		System.out.println("\nnumber of vowels in the words removed == " + vowelsRemoved);
 		System.out.println("\n\n");
-
-
-		//more test cases
-
+		
 	}
 }

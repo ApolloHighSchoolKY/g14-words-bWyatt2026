@@ -8,22 +8,29 @@ public class Words
 
 	public Words()
 	{
-
+		wordList = new ArrayList<Word>();
 	}
 
 	public Words(String s)
 	{
+		wordList = new ArrayList<Word>();
 
+		setWords(s);
 	}
 
 	public void setWords(String s)
 	{
-		//Create a Scanner for the list of words in the string "s"
+		wordList.clear();
 
+		//Create a Scanner for the list of words in the string "s"
+		Scanner wordScan = new Scanner(s);
 
 		//Continue to loop while there are more words to read
-
+		while(wordScan.hasNext())
+		{
 			//Add objects of the type Word to our ArrayList "wordList"
+			wordList.add(new Word(wordScan.next()));
+		}
 
 
 	}
@@ -44,7 +51,7 @@ public class Words
 	public int removeWordsWithXChars(int size)
 	{
 		int vowelCount = 0;
-
+		//Remove from an arraylist backwards
 		//for each Word in the ArrayList "words" loop
 
 			//if the Word has "size" characters
